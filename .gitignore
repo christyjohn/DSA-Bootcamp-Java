@@ -88,5 +88,5 @@ gradle-app.setting
 Thumbs.db # Windows
 
 # Avoid kunal's folders
-/lectures/
-/assignments/
+lectures/*
+assignments/*
