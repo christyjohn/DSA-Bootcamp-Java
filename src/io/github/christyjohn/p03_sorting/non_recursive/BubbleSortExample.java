@@ -5,13 +5,15 @@ import java.util.Arrays;
 public class BubbleSortExample {
     public static void main(String[] args) {
         int[] nums = { 3, 56, 2, 78, 109, 23, -4, 5};
-        System.out.println(Arrays.toString(bubbleSort(nums)));
+        bubbleSort(nums);
+        System.out.println(Arrays.toString(nums));
 
         nums = new int[]{ -3, -56, -2, -78, -109, -23, 4, -5};
-        System.out.println(Arrays.toString(bubbleSort(nums)));
+        bubbleSort(nums);
+        System.out.println(Arrays.toString(nums));
     }
 
-    public static int[] bubbleSort(int[] nums) {
+    public static void bubbleSort(int[] nums) {
 
         for(int i = 0; i < nums.length; i++) {
             boolean swapped = false;
@@ -30,7 +32,5 @@ public class BubbleSortExample {
                 break;
             }
         }
-
-        return nums;
     }
 }
