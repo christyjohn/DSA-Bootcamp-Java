@@ -5,17 +5,22 @@ public class OrderAgnosticBinarySearchExample {
 
         int[] nums = { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 };
         int target = 3;
-
         System.out.println(binarySearch(nums, target));
 
         nums = new int[]{-11, -3, 1, 2, 8, 16, 19, 23, 28, 45 };
         target = 16;
-
         System.out.println(binarySearch(nums, target));
 
         nums = new int[]{ 149, 98, 85, 65, 32, 19, 12, 3, -28, -114 };
-        target = -28;
+        target = -114;
+        System.out.println(binarySearch(nums, target));
 
+        nums = new int[]{ 149, 98, 85, 65, 65, 65, 65, 3, -28, -114 };
+        target = 85;
+        System.out.println(binarySearch(nums, target));
+
+        nums = new int[]{ -114, -28, 3, 65, 65, 65, 65, 85, 98, 149 };
+        target = 85;
         System.out.println(binarySearch(nums, target));
     }
 
