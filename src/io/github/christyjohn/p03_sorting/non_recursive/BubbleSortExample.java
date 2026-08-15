@@ -11,6 +11,10 @@ public class BubbleSortExample {
         nums = new int[]{ -3, -56, -2, -78, -109, -23, 4, -5};
         bubbleSort(nums);
         System.out.println(Arrays.toString(nums));
+
+        nums = new int[]{ -3, -56, -2, -78, -109, -23, 4, -5};
+        bubbleSort(nums);
+        System.out.println(Arrays.toString(nums));
     }
 
     public static void bubbleSort(int[] nums) {
