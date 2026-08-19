@@ -26,7 +26,22 @@ public class InsertionSortExample {
     }
 
     public static void insertionSort(int[] nums) {
-        for (int i = 0; i < nums.length - 1; i++) {
+        // CLRS
+        for (int i = 1; i < nums.length; i++) {
+            int key = nums[i];
+
+            int j = i - 1;
+
+            while (j >= 0 && nums[j] > key) {
+                nums[j + 1] = nums[j];
+                j--;
+            }
+
+            nums[j + 1] = key;
+        }
+
+        // My trial - working but above is canonical way
+        /*for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i+1; j > 0; j--) {
                 if (nums[j-1] > nums[j]) {
                     int swap = nums[j-1];
@@ -36,6 +51,6 @@ public class InsertionSortExample {
                     break;
                 }
             }
-        }
+        }*/
     }
 }
